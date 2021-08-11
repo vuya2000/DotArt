@@ -1,0 +1,35 @@
+<!Doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title> Pixel Art Constructor </title>
+    <style>
+      div.canvas {
+        height: 40px;
+        width: 40px;
+        float: center;
+        border-style: solid;
+        border-width: thick;
+      }
+      div.pixel {
+        background-color: white;
+        height: 20px;
+        width: 50%;
+        float: left;
+        border-style: solid;
+        border-width: thin;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="canvas">
+      <script>
+        for (let i=0; i<4; i++) {
+          const pixel = document.createElement('div');
+          pixel.className = 'pixel';
+          document.body.div.canvas.appendChild(pixel);
+        }
+      </script>
+    </div>
+  </body>
+</html>
